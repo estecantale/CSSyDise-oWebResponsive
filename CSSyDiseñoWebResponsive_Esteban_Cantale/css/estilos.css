@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+    background-color: #02010a;
+    font-family: 'Dancing Script', cursive;
+}
+
+header {
+    background-color: #5b7989;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    margin-left: 0.5em;
+    width: 60%;
+    text-shadow: 2px 2px #02010a;
+}
+
+li {
+    display: inline;
+}
+
+nav {
+    margin-left: 1em;
+    padding-top: 0.6em;
+    width: 30%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    text-shadow: none;
+    color: white;
+}
+
+.actual {
+    text-decoration: none;
+}
+
+.contenido {
+    margin: auto;
+    width: 900px;
+    justify-content: center;
+}
+
+.central {
+    width: 100%;
+    height: auto;
+    background-color: #82c3a6;
+    align-items: center;
+    justify-content: center;
+}
+
+#fotografia {
+    margin: 5%;
+    width: 90%;
+    box-shadow: 2px 2px #02010a;
+    display: inline-block;
+}
+
+.secundaria {
+    width: 100%;
+    background-color: #d5c75f;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+
+#paisaje_index {
+    margin-top: 1em;
+    width: 80%;
+    border: 1px solid black;
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+#paisaje_index:hover {
+    transition: 1s;
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#retrato_index {
+    margin-top: 1em;
+    width: 80%;
+    border: 1px solid black;
+    transition: 1s;
+    transform: translate(0px, 0px, );
+}
+
+#retrato_index:hover {
+    transition: 1s;
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+footer {
+    padding-left: 1em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #c6d5c5;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row wrap;
+}
+footer div{
+    width: 25%;
+}
+
+.paisajes {
+    height: auto;
+    width: 100%;
+    background-color: #d5c75f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.retratos {
+    height: auto;
+    width: 100%;
+    background-color: #d5c75f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.paisajes img{
+    margin: 2%;
+    box-shadow: 2px 2px #02010a;
+    width: 25%;
+}
+
+.retratos img{
+    margin: 2%;
+    box-shadow: 2px 2px #02010a;
+    width: 25%;
+}
+
+#paisaje1,
+#retrato1 {
+    filter: blur(10px);
+}
+
+.paisajes img:nth-child(even) {
+    filter: grayscale(100%);
+}
+
+.retratos img:nth-child(even) {
+    filter: grayscale(100%);
+}
+
+#paisaje3,
+#retrato3 {
+    filter: sepia(90%);
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        width: 100%;
+        text-shadow: 2px 2px #02010a;
+    }
+    nav {
+        padding-top: 0.6em;
+        width: 100%;
+    }
+    .contenido{
+        width: 100%;
+    }
+    .secundaria{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .central{
+        width: 100%;
+    }
+    .paisajes{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .paisajes img{
+      margin: 2%;
+      width: 80%;
+    }
+    .retratos{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .retratos img{
+      margin: 2%;
+      width: 80%;
+    }
+    footer{
+      text-align: center;
+    }
+    footer div{
+      width: 100%;
+    }
+}
